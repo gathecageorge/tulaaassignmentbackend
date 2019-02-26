@@ -1,0 +1,26 @@
+1. Clone this repository:
+https://github.com/gathecageorge/tulaaassignmentbackend.git
+
+2. Open src/main/resources/application.properties and change database name from
+tulaa_george to any db_name and change username and password respectively.
+Once database settings are correct, the table will be created automatically for storing the CSV data.
+
+3. This is an Intellij IDEA project built with Spring Boot Java Marvel:
+Open with Intellij IDEA and run the application, might take time to build from marven and pull dependencies.
+
+4. Clone android repository and run to install android APK,
+otherwise you can use the APK here to install in any phone.
+
+5. Copy the sample CSV file to any folder on the phone. It will be used to test uploading.
+
+6. Run the app. When launched, There is a button to choose CSV. click on it to open file chooser.
+Choose the sample CSV from respective folder.
+
+7. In the Url textbox, type the url of the backend service that consumes the CSV file and stores it
+inside the database.
+Note: The phone and server backend needs to be on same network on the backend service be in the
+internet.
+In this case I use same network so the url is http://192.168.1.106:8080/csv using IP address
+of the machine running backend at spring's default port 8080.
+
+8. Click upload CSV, you will get response below the upload button.
